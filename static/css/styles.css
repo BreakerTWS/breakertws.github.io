@@ -883,9 +883,8 @@ section {
 }
 
 .projects-item {
-    flex-wrap: wrap;
     min-height: 350px;
-    width: 100%;
+    max-width: 300px;
     text-align: center;
     border: 3px solid var(--azul-color);
     border-radius: 10px;
@@ -895,7 +894,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1.5rem;
     transition: 0.4s ease-in-out;
 }
