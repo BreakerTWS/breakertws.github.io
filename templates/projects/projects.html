@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href='/static/css/styles.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.css" integrity="sha512-lPVylmnp4LyPqOairDh58Rxe7cfOsLhf0uQHRwNJSWjO0Wd10oaNnzSr+PPw+foN52kjgwImetOCDnG1pNO/Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.css" integrity="sha512-u9sARgGS0ptZTPKetLol1LJd2gv9Zg0KbuoCEft0YP9tnstEsYNVxqzkuOEf+FzyeYWwJGE5jD399b7j8AjG7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.css" integrity="sha512-0LnC2O/jH9ps+JqmA6HwcOOxZNk3SWB9IJC2N24DakY7TbA9DZa1J7kmEqnXeooVXssHdkOTv6an9z+fICE+QQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Br34k3r <span>TWS</span>.</a>
+        <div class="toggle-container">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle" class="toggle-label">
+                <img src="/static/img/solecito.png" class="toggle-icon solecito">
+                <img src="/static/img/lunita.png" class="toggle-icon lunita">
+            </label>
+        </div>
+        <nav class="navbar">
+            <ul class="main-menu">
+                <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="/"><span class="fa fa-home" id="nav-icon"></span>Home<span class="menu-animate"></span></a></li>
+                <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="/templates/projects/projects.html" class="active"><span class="fa fa-user-circle" id="nav-icon"></span>Projects<span class="menu-animate"></span></a></li>
+            </ul>
+        </nav>
+        <button class="fa fa-bars" aria-hidden="true" id="menu-icon"></button>
+    </header>
+
+    <section class="projects-content" id="projects-content">
+        <div class="projects-box">
+            <h2 class="heading"  data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="100">Projects <span>Breaker</span></h2>
+            
+            <div class="wrapper">
+                <div class="projects-item">
+                    <img src="/static/img/cobreak.jpeg" alt="cobreak">
+                    <h2>CoBreak</h2>
+                    <p>CoBreak is a password security audit and recovery tool available for many operating systems. CoBreak supports various types of cipher and hashing for the purpose of facilitating data encryption or other</p>
+                </div>
+                <div class="projects-item">
+                    <img src="/static/img/wibrfake.png" alt="cobreak">
+                    <h2>WibrFake</h2>
+                    <p>Wibrfake is an advanced cybersecurity tool developed for the creation of fake access points with captive portals with the aim of exploring and understanding vulnerabilities of Wi-Fi networks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/static/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

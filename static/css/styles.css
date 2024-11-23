@@ -844,3 +844,70 @@ section {
 .btn-box.btns {
     position: absolute;
 }
+
+.projects-box .heading {
+    font-size: 3rem;
+}
+
+.projects-box .heading span {
+    color: var(--azul-color);
+}
+
+.projects-box {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects-box img {
+    width: 18rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 2px solid var(--azul-color);
+    box-shadow: 0 0 25px var(--azul-color);
+}
+
+.projects-box .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.projects-item {
+    min-height: 350px;
+    max-width: 500px;
+    text-align: center;
+    border: 3px solid var(--azul-color);
+    margin: 0 2rem;
+    border-radius: 10px;
+    padding: 30px 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 0.4s ease-in-out;
+}
+
+.projects-item h2 {
+    font-size: 2.5rem;
+}
+
+.projects-item p {
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.projects-item:hover {
+    border: 3px solid var(--azul-color);
+    transform: translateY(-10px)scale(1.03);
+    box-shadow: 0 0 25px var(--azul-color);
+    transition: 0.5s;
+}
+.projects-item:hover::before {
+    transition: 0.5s;
+}
