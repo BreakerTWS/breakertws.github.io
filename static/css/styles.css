@@ -781,3 +781,66 @@ section {
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
     width: 41%;
 }
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+}
+
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about span {
+    color: var(--azul-color)
+}
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--azul-color);
+}
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 126%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--black-color);
+    border-bottom: .2rem solid var(--black-color);
+    border-left: .2rem solid var(--azul-color);
+    border-right: .2rem solid var(--azul-color);
+}
+
+.about-content {
+    text-align: center;
+}
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.btn-box.btns {
+    position: absolute;
+}

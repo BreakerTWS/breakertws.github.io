@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.css" integrity="sha512-u9sARgGS0ptZTPKetLol1LJd2gv9Zg0KbuoCEft0YP9tnstEsYNVxqzkuOEf+FzyeYWwJGE5jD399b7j8AjG7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.css" integrity="sha512-0LnC2O/jH9ps+JqmA6HwcOOxZNk3SWB9IJC2N24DakY7TbA9DZa1J7kmEqnXeooVXssHdkOTv6an9z+fICE+QQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <header>
@@ -25,11 +26,33 @@
                 <li><a href="/"><span class="fa fa-home" id="nav-icon"></span>Home<span class="menu-animate"></span></a></li>
                 <li><a href="#"><span class="fa fa-briefcase" id="nav-icon"></span>Portfolio<span class="menu-animate"></span></a></li>
                 <li><a href="/templates/skills/skills.html"><span class="fa fa-pie-chart" id="nav-icon"></span>Skills<span class="menu-animate"></span></a></li>
-                <li><a href="/templates/_about/about.html" target="_self" class="active"><span class="fa fa-user-circle" id="nav-icon"></span>About<span class="menu-animate"></span></a></li>
+                <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="10"><a href="/templates/about/about.html" class="active"><span class="fa fa-user-circle" id="nav-icon"></span>About<span class="menu-animate"></span></a></li>
             </ul>
         </nav>
         <button class="fa fa-bars" aria-hidden="true" id="menu-icon"></button>
     </header>
-    <script src='/static/js/script.js'></script>
+    
+    <section class="about" id="about">
+        <h2 class="heading" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="100">About <span>Me</span></h2>
+
+        <div class="about-img">
+            <img src="/static/img/btws1.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Ruby's Gem Pentesting</h3>
+            <p>I am a cybersecurity student at the University of Computer Sciences in Havana, Cuba, with a specialization in pentesting. I am passionate about ethical hacking and hacking software development in programming languages such as C and Ruby.</p>
+
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <script src="/static/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
