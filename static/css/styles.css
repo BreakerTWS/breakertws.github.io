@@ -845,6 +845,8 @@ section {
     position: absolute;
 }
 
+
+
 .projects-box .heading {
     font-size: 3rem;
 }
@@ -859,6 +861,8 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 2rem;
+    width: 100%;
 }
 
 .projects-box img {
@@ -871,24 +875,27 @@ section {
 
 .projects-box .wrapper {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .projects-item {
+    flex-wrap: wrap;
     min-height: 350px;
-    max-width: 500px;
+    width: 100%;
     text-align: center;
     border: 3px solid var(--azul-color);
-    margin: 0 2rem;
     border-radius: 10px;
-    padding: 30px 50px;
+    padding: 2rem;
     cursor: pointer;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1.5rem;
     transition: 0.4s ease-in-out;
 }
@@ -900,6 +907,8 @@ section {
 .projects-item p {
     font-size: 1.2rem;
     display: flex;
+    text-align: center;
+    line-height: 1.6;
 }
 
 .projects-item:hover {
@@ -908,6 +917,55 @@ section {
     box-shadow: 0 0 25px var(--azul-color);
     transition: 0.5s;
 }
+
 .projects-item:hover::before {
     transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    .projects-box {
+        padding: 1rem;
+    }
+    
+    .projects-box .heading {
+        font-size: 2.5rem;
+    }
+    
+    .projects-item {
+        min-height: 300px;
+        padding: 1.5rem;
+    }
+    
+    .projects-item h2 {
+        font-size: 2rem;
+    }
+    
+    .projects-box img {
+        width: 15rem;
+        height: 13rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-box .heading {
+        font-size: 2rem;
+    }
+    
+    .projects-item {
+        min-height: 280px;
+        padding: 1rem;
+    }
+    
+    .projects-item h2 {
+        font-size: 1.8rem;
+    }
+    
+    .projects-item p {
+        font-size: 1.1rem;
+    }
+    
+    .projects-box img {
+        width: 12rem;
+        height: 10rem;
+    }
 }
