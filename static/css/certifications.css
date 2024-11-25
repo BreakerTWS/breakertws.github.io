@@ -1,0 +1,215 @@
+/* Certifications Section */
+.certifications {
+    min-height: 100vh;
+    padding: 8rem 9% 4rem;
+    background: linear-gradient(to bottom, rgba(14, 255, 255, 0.05), transparent);
+}
+
+.certifications .heading {
+    font-size: 5.5rem;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.certifications .heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background: var(--azul-color);
+    box-shadow: 0 0 10px var(--azul-color);
+}
+
+.certifications .heading span {
+    color: var(--azul-color);
+    text-shadow: 0 0 15px var(--azul-color);
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.certification-box {
+    width: 20%;
+    max-width: 1200px;
+    margin: 2rem 0;
+}
+
+.certification-item {
+    background: rgba(14, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--azul-color);
+    border-radius: 20px;
+    padding: 3rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(14, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.certification-item:hover::before {
+    left: 100%;
+}
+
+.certification-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px var(--azul-color);
+}
+
+.certification-item img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid var(--azul-color);
+    margin-bottom: 2rem;
+    transition: all 0.5s ease;
+}
+
+.certification-item:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px var(--azul-color);
+}
+
+.certification-info {
+    padding: 2rem;
+}
+
+.certification-info h4 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--azul-color);
+    text-shadow: 0 0 10px rgba(14, 255, 255, 0.3);
+}
+
+.certification-info p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--light-color);
+}
+
+.light-theme .certification-info p {
+    color: var(--black-color);
+}
+
+.certification-info .btn {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: var(--azul-color);
+    border-radius: 50px;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.certification-info .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;
+    z-index: -1;
+}
+
+.certification-info .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px var(--azul-color);
+}
+
+.certification-info .btn:hover::before {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .certifications {
+        padding: 7rem 4% 3rem;
+    }
+
+    .certifications .heading {
+        font-size: 4.5rem;
+    }
+
+    .certification-info h4 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications .heading {
+        font-size: 4rem;
+    }
+
+    .certification-item {
+        padding: 2rem;
+    }
+
+    .certification-info h4 {
+        font-size: 2rem;
+    }
+
+    .certification-info p {
+        font-size: 1.4rem;
+    }
+
+    .certification-info .btn {
+        padding: 1rem 2.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .certifications .heading {
+        font-size: 3.5rem;
+    }
+
+    .certification-item {
+        padding: 1.5rem;
+    }
+
+    .certification-info {
+        padding: 1.5rem;
+    }
+
+    .certification-info h4 {
+        font-size: 1.8rem;
+    }
+
+    .certification-info p {
+        font-size: 1.3rem;
+    }
+}
